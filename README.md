@@ -10,7 +10,7 @@ Add this project to your IDE as an Android Library. Execute the following comman
 
 ## Usage
 
-Follow [Sugar's instructions](http://satyan.github.io/sugar/getting-started.html) to set up your project and build your model entities.
+Follow [Sugar's instructions](http://satyan.github.io/sugar/getting-started.html) to set up your project and build your model entities, with this slightly modified example of a simple model object:
 
 	public class User extends SugarRecord<User> {
 	
