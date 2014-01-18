@@ -46,7 +46,7 @@ Follow [Retrofit's instructions](http://square.github.io/retrofit/) to build you
 	    @POST( "/users.json" )
 	    void create( @Body User resource, Callback<User> callback );
 	
-	    // example of a synchronous request, no callback.
+	    // example of a synchronous request: no callback needed and work is performed on the current thread.
 	    @POST( "/users/sign_in.json" )
 	    UserResponse login( @Body User resource );
 	}
