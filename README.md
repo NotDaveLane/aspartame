@@ -10,7 +10,10 @@ Add this project to your IDE as an Android Library. Execute the following comman
 
 ## Usage
 
-Follow [Sugar's instructions](http://satyan.github.io/sugar/getting-started.html) to set up your project and build your model entities, with this slightly modified example of a simple model object:
+Follow [Sugar's instructions](http://satyan.github.io/sugar/getting-started.html) to set up your project and build your model entities. There are two modifications to these instructions:
+
+ - Use a public zero-argument constructor for your model objects. Deserialization using [Gson](https://code.google.com/p/google-gson/) (a dependency of Retrofit) requires this.
+ - Do not store API responses' `id` value as `id`. You do not want your Android SQLite database primary keys to be decreed by a remote server.
 
 	public class User extends SugarRecord<User> {
 	
