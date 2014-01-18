@@ -15,6 +15,8 @@ Follow [Sugar's instructions](http://satyan.github.io/sugar/getting-started.html
  - Use a public zero-argument constructor for your model objects. Deserialization using [Gson](https://code.google.com/p/google-gson/) (a dependency of Retrofit) requires this.
  - Do not store API responses' `id` value as `id`. You do not want your Android SQLite database primary keys to be decreed by a remote server.
 
+Here is a simple example model object:
+
 	public class User extends SugarRecord<User> {
 	
 	    @SerializedName( "id" )
