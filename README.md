@@ -4,7 +4,7 @@ Aspartame makes it easier to integrate [Sugar ORM](http://satyan.github.io/sugar
 
 ## Installation
 
-Add this project to your IDE as an Android Library. Execute the following command to download dependencies:
+Add this project to your IDE as an Android Library. Execute the following command to download dependencies, or use the JARs included in the libs directory:
 
     $ mvn install
 
